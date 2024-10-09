@@ -138,8 +138,8 @@ echo -e '[INFO] Starting OSWatcher Report'
 echo '================================'
 
 check_intalled_tools
-check_previous_report_files
 create_dirs
+check_previous_report_files
 
 main_load_average "$oswatcher_data_dir"
 main_cpu "$oswatcher_data_dir"
