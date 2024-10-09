@@ -73,6 +73,12 @@ function check_intalled_tools() {
     fi
 }
 
+function create_dirs() {
+    test -d "$RRD_ROOT_DIR" || mkdir -p "$RRD_ROOT_DIR"
+    test -d "$DB_ROOT_DIR" || mkdir -p "$DB_ROOT_DIR"
+    test -d "$PNG_ROOT_DIR" || mkdir -p "$PNG_ROOT_DIR"
+}
+
 function check_previous_report_files() {
     #
     # Check if RRD files(s) or SQLite3 files exist.
@@ -133,6 +139,7 @@ echo '================================'
 
 check_intalled_tools
 check_previous_report_files
+create_dirs
 
 main_load_average "$oswatcher_data_dir"
 main_cpu "$oswatcher_data_dir"
