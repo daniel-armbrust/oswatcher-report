@@ -18,4 +18,4 @@ A script that read and create a report with some graphs from OSWatcher output fi
 
 ###  Process - TOP CPU Usage
 
-![Network](/img/example-top-cpu-process-1.png)
+![Process - TOP CPU Usage](/img/example-top-cpu-process-1.png)
